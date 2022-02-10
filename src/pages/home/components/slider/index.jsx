@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import FeaturedCatgoryItem from "../../../../components/items/featured-category-item";
 import CategoryComponent from "./category";
+import FeaturedCategory from "./featured-category";
 import SliderComponent from "./slider";
 import TodaysDeal from "./todays-deal";
 
@@ -10,23 +10,11 @@ const TopComponent = () => {
 
             <CategoryComponent />
 
-
             <div className="col-lg-8 col-md-4 ">
                 <SliderComponent />
-                <div className="d-flex">
-
-                    <FeaturedCatgoryItem />
-                    <FeaturedCatgoryItem />
-                    <FeaturedCatgoryItem />
-                    <FeaturedCatgoryItem />
-                    <FeaturedCatgoryItem />
-                    <FeaturedCatgoryItem />
-                </div>
+                <FeaturedCategory />
             </div>
-
-
             <TodaysDeal />
-
 
         </div>
     )

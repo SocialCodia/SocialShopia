@@ -7,9 +7,17 @@ const api = axios.create({
     withCredentials: true
 });
 
-export const getFeatureCategories = () => api.get('/public/categories/featured');
+//Categories
+export const getFeaturedCategories = () => api.get('/public/categories/featured');
 export const getCategories = () => api.get('/public/categories');
 
+//Products
+export const getFeaturedProducts = () => api.get('/public/products/featured');
+export const getProducts = () => api.get('/public/products');
+export const getTodaysDealProducts = () => api.get('/public/products/todaysdeal');
+
+//Banners
+export const getBanners = () => api.get('/public/banners');
 
 
 api.interceptors.response.use((response) => {
