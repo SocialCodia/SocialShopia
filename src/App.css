@@ -138,10 +138,44 @@ a{
   padding: 5px;
 }
 
-.productCard {
-  background-color: white;
+.categoriesCard{
+  max-height: 470px;
+  min-height: 470px;
+  overflow: hidden;
 }
 
+
+.cardBody {
+  padding: 5px;
+}
+
+.cardBody ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+/* .productCard{
+  min-height: 315px;
+} */
+
+.truncateAfterTwoLine{
+  -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.truncateAfterOneLine{
+  -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 
 .productCard .productTitle{
@@ -149,7 +183,7 @@ a{
   font-weight: 700;
 }
 
-.productCard  .d-flex p{
+.productCard .d-flex p{
   color: red;
   font-weight: 700;
   margin: 0px;
@@ -169,4 +203,35 @@ a{
 .itemFeaturedCategory p{
   font-weight: 700;
   font-size: 12px;
+}
+
+.categoryImage{
+  max-width: 25px;
+}
+
+.categoriesList a{
+  color: black;
+  font-size: 12px;
+}
+
+.itemTodaysDealProduct a{
+  color: black;
+  font-size: 12px;
+}
+
+
+.truncateAfterTwoLine{
+  -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.itemTodaysDealProduct .col-lg-3{
+  place-self: center;
+}
+
+.itemTodaysDealProduct p{
+  padding: 0px;
+  margin: 0px;
 }

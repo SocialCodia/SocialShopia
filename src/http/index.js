@@ -3,7 +3,8 @@ import { toast } from 'react-toastify';
 
 
 const api = axios.create({
-    baseURL: 'https://socialshopia-api.herokuapp.com/api/',
+    // baseURL: 'https://socialshopia-api.herokuapp.com/api/',
+    baseURL: 'http://localhost:5500/api/',
     withCredentials: true
 });
 

@@ -7,7 +7,7 @@ const CategoryComponent = () => {
     const { categories, isCategoriesLoading } = useSelector(state => state.categorySlice);
 
     return (<div className="col-lg-2 col-md-4">
-        <div className="card">
+        <div className="card categoriesCard">
             <div className="card-header cardHeader text-white">
                 Categorides
             </div>
@@ -22,7 +22,7 @@ const CategoryComponent = () => {
                                     categories.map((x, i) =>
                                         <li key={i}>
                                             <Link to='/'>
-                                                <img className="rounded" src={x.icon} alt="" />
+                                                <img className="rounded categoryImage" src={x.icon} alt="" />
                                                 {x.name}
                                             </Link>
                                         </li>

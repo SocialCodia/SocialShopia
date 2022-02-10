@@ -1,79 +1,22 @@
 import { Link } from "react-router-dom";
+import ItemTodaysDealProduct from "../../../../components/items/item-todays-deal-product";
+import { useSelector } from "react-redux";
 
 const TodaysDeal = () => {
+
+    const { todaysDealProducts, isTodaysDealProductsLoading } = useSelector(state => state.productSlice);
+
     return (<div className="col-lg-2 col-md-4">
-        <div className="card">
+        <div className="card categoriesCard">
             <div className="card-header cardHeader text-white">
                 Todays Deal
             </div>
             <div className="card-body cardBody">
                 <ul className="categoriesList list-unstyled  ">
-                    <li>
-                        <Link to='/'>
-                            <img className="rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="" />
-                            Pain Relief
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to='/'>
-                            <img className="rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="" />
-                            Pain Relief
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to='/'>
-                            <img className="rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="" />
-                            Pain Relief
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to='/'>
-                            <img className="rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="" />
-                            Pain Relief
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to='/'>
-                            <img className="rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="" />
-                            Pain Relief
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to='/'>
-                            <img className="rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="" />
-                            Pain Relief
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to='/'>
-                            <img className="rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="" />
-                            Pain Relief
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to='/'>
-                            <img className="rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="" />
-                            Pain Relief
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to='/'>
-                            <img className="rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="" />
-                            Pain Relief
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to='/'>
-                            <img className="rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="" />
-                            Pain Relief
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to='/'>
-                            <img className="rounded" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" alt="" />
-                            Pain Relief
-                        </Link>
-                    </li>
+                    {
+                        isTodaysDealProductsLoading ? <h1>Loading...</h1>
+                            : todaysDealProducts.map((x) => <ItemTodaysDealProduct product={x} />)
+                    }
                 </ul>
             </div>
         </div>

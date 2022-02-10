@@ -41,7 +41,6 @@ const HomePage = () => {
             <div className="ccontainer mt-3 mb-3">
                 <TopComponent />
                 <FeaturedProducts />
-                <FeaturedProducts />
             </div>
             <Footer />
         </>
