@@ -1,5 +1,5 @@
 import Header from "../../components/header";
-import Footer from "./components/footer";
+import Footer from "../../components/footer";
 import FeaturedProducts from "./components/products/featured/featured-products";
 import TopComponent from "./components/slider";
 import { useEffect } from "react";

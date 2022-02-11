@@ -7,6 +7,7 @@
 body{
   font-family: "Lato", sans-serif;
   background-color: #F2F3F8;
+  /* color: var(--greenColor); */
 }
 
 .bigCard h4{
@@ -31,6 +32,7 @@ body{
   height: 30px;
   line-height: 30px;
 }
+
 
 .headerFirst .rightUl ul{
   display: flex !important;
@@ -234,4 +236,25 @@ a{
 .itemTodaysDealProduct p{
   padding: 0px;
   margin: 0px;
+}
+
+.titleHeader {
+  padding: 70px 80px !important;
+  background-image: url(../public/sources/images/header-bg.png);
+  border-radius: 20px;
+  background-size: cover;
+  font-family: "Quicksand";
+}
+
+.textForgotPassword{
+  font-size: 13px;
+  color: var(--greenColor);
+  margin-right: 15px;
+  margin-top: -10px;
+}
+
+.social-login img{
+  width: 30px;
+  border-radius: 50%;
+  padding: 5px;
 }

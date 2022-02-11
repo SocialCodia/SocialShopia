@@ -21,7 +21,7 @@ const CategoryComponent = () => {
                                 {
                                     categories.map((x, i) =>
                                         <li key={i}>
-                                            <Link to='/'>
+                                            <Link to={`/category/${x.slug}`}>
                                                 <img className="rounded categoryImage" src={x.icon} alt="" />
                                                 {x.name}
                                             </Link>
