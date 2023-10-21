@@ -1,0 +1,260 @@
+:root{
+  --primaryTextColor : #7E7E7E;
+  --borderColor :#ececec;
+  --greenColor:#3BB77E;
+}
+
+body{
+  font-family: "Lato", sans-serif;
+  background-color: #F2F3F8;
+  /* color: var(--greenColor); */
+}
+
+.bigCard h4{
+  font-family: "Quicksand";
+  margin: 0;
+}
+
+
+.ccontainer{
+  width: 92% !important;
+  width: auto;
+  margin: auto;
+}
+
+*{
+  font-family: "Lato", sans-serif;
+}
+
+.headerFirst{
+  color: var(--primaryTextColor);
+  font-size: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+
+.headerFirst .rightUl ul{
+  display: flex !important;
+}
+
+.headerFirst .rightUl li{
+  padding: 0px 10px;
+  text-align: center;
+  min-width: 100px;
+}
+
+.headerFirst .leftUl li{
+  text-align: center;
+  min-width: 80px;
+}
+
+.headerFirst a{
+  color: var(--primaryTextColor);
+  text-decoration: none;
+  transition: all 1s;
+}
+
+
+.headerFirst a:hover{
+  color: black;
+  font-size: 11px;
+}
+
+
+.navSecond .searchBox{
+  align-self: center;
+}
+
+.navSecond .logo img{
+  width: 120px;
+}
+
+.navSecond{
+  padding: 30px 0px;
+}
+
+.navSecond .navAction{
+  font-size: 12px;
+}
+
+.navThird{
+  font-weight: 700;
+  font-family: "Quicksand";
+  background-color: var(--greenColor);
+  height: 50px;
+  line-height: 50px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.navThird{
+  color: white;
+  font-weight: 700;
+  font-family: "Quicksand";
+  background-color: var(--greenColor);
+  height: 50px;
+  line-height: 50px;
+}
+
+.navThird a{
+  color: white;
+}
+
+.navThird .middle li{
+  padding: 0px 10px;
+}
+
+
+.navThird .left .content{
+  margin-left: 10px;
+  line-height: 0;
+  align-self: center;
+}
+
+
+.navThird .left .content p:last-child {
+  font-size: 10px;
+}
+
+.categoriesList{
+  color: red;
+}
+
+.border-bottom-no{
+  border-bottom: none;
+}
+
+.categoriesList img{
+  width: 40px;
+  margin-right: 10px;
+}
+.cardHeader{
+  border-bottom: none;
+  background-color: var(--greenColor);
+}
+
+.cardBody ul li{
+  padding: 5px;
+}
+
+.categoriesCard{
+  max-height: 470px;
+  min-height: 470px;
+  overflow: hidden;
+}
+
+
+.cardBody {
+  padding: 5px;
+}
+
+.cardBody ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+/* .productCard{
+  min-height: 315px;
+} */
+
+.truncateAfterTwoLine{
+  -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.truncateAfterOneLine{
+  -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.productCard .productTitle{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.productCard .d-flex p{
+  color: red;
+  font-weight: 700;
+  margin: 0px;
+  padding: 0px ;
+}
+
+.productCard  .d-flex p:last-child{
+  color: var(--greenColor);
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.itemFeaturedCategory .card{
+  align-items: center;
+}
+
+.itemFeaturedCategory p{
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.categoryImage{
+  max-width: 25px;
+}
+
+.categoriesList a{
+  color: black;
+  font-size: 12px;
+}
+
+.itemTodaysDealProduct a{
+  color: black;
+  font-size: 12px;
+}
+
+
+.truncateAfterTwoLine{
+  -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.itemTodaysDealProduct .col-lg-3{
+  place-self: center;
+}
+
+.itemTodaysDealProduct p{
+  padding: 0px;
+  margin: 0px;
+}
+
+.titleHeader {
+  padding: 70px 80px !important;
+  background-image: url(../public/sources/images/header-bg.png);
+  border-radius: 20px;
+  background-size: cover;
+  font-family: "Quicksand";
+}
+
+.textForgotPassword{
+  font-size: 13px;
+  color: var(--greenColor);
+  margin-right: 15px;
+  margin-top: -10px;
+}
+
+.social-login img{
+  width: 30px;
+  border-radius: 50%;
+  padding: 5px;
+}
